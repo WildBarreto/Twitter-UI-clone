@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { 
-    Container, 
-    Banner, 
-    Avatar, 
-    ProfileData, 
+import {
+    Container,
+    Banner,
+    Avatar,
+    ProfileData,
     LocationIcon,
     CakeIcon,
-    Followage 
+    Followage,
+    EditButton,
 } from './styles';
 
 const ProfilePage: React.FC = () => {
@@ -15,10 +16,12 @@ const ProfilePage: React.FC = () => {
         <Container>
             <Banner>
                 <Avatar />
+
             </Banner>
 
             <ProfileData>
-                {/* <EditButton outlined>Editar perfil</EditButton> */}
+
+                <EditButton outlined>Editar perfil</EditButton>
 
                 <h1>Wild Barreto</h1>
                 <h2>@wild_rreto</h2>
@@ -29,11 +32,11 @@ const ProfilePage: React.FC = () => {
 
                 <ul>
                     <li>
-                        <LocationIcon/>
+                        <LocationIcon />
                         Bahia, Brasil
                     </li>
                     <li>
-                        <CakeIcon/>
+                        <CakeIcon />
                         Nascido 27/1997
                     </li>
                 </ul>
